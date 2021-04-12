@@ -4,5 +4,12 @@
 </head>
 <body>
 
+    <form action="process.php" method="post">
+        Vendég neve: <input type="text" maxlength="30"><br>
+        Megjegyzés: <input type="text"><br>
+        <input type="submit">
+    
+    </form>
+
 </body>
 </html>
