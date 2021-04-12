@@ -5,8 +5,8 @@
 <body>
 
     <form action="process.php" method="post">
-        Vendég neve: <input type="text" name="guestname" maxlength="30" required="true"><br>
-        Megjegyzés: <input type="text" name="notes"><br>
+        Vendég neve:<br><input type="text" name="guestname" maxlength="30" required="true"><br><br>
+        Megjegyzés:<br><input type="text" name="notes"><br><br>
         <input type="submit" name="Submit">
     
     </form>
