@@ -30,7 +30,7 @@
 
                 var guestname = document.createElement("input");
                 guestname.type = "text";
-                guestname.name = ("guest_" + (i+1));
+                guestname.name = "guestnames[]";
                 container.appendChild(guestname);
 
 
@@ -40,7 +40,7 @@
 
 				var notes = document.createElement("textarea");
                 notes.type = "text";
-                notes.name = ("note_" + (i+1));
+                notes.name = "notes[]";
                 container.appendChild(notes);
 
                 container.appendChild(document.createElement("br"));
