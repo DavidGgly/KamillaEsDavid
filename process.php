@@ -18,9 +18,13 @@
 
     if (mysqli_connect_error()) {
         die('Connect error(' . mysqli_connect_errno().')'. mysqli_connect_error());
-    } else {
-        $insert = "INSERT INTO guests (FullName, Notes) VALUES (?, ?)";
-        mysqli_query($conn,"INSERT INTO guests (FullName, Notes) VALUES ('$guestname', '$notes')");
+    }
+    else {
+        // Iterate through array and insert into DB all elements.
+        foreach ($guestName as $i => $oneGuest) {
+            $insert = "INSERT INTO Guests (FullName, Notes) VALUES (?, ?)";
+            mysqli_query($conn,"INSERT INTO Guests (FullName, Notes) VALUES ('$oneGuest', '$notes[$i]')");
+        }
     }
 
     // Close connection
