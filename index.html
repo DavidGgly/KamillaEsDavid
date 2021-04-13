@@ -52,6 +52,7 @@
             registerButton.name = "registerButton";
             registerButton.value = "Elfogadom a meghívást :)"
             container.appendChild(registerButton);
+            
         }
     </script>
 </head>
@@ -61,8 +62,8 @@
             <input type="number" id="guestnumber">
             <input type="button" id="nextButt" name="next" onclick="addFields()" value="Tovább">
         </form>
-        <formgroup>
-            <div id="container">
-        </formgroup>
+        <form method="POST" action="process.php">
+            <div id="container"><br>
+        </form>
     </body>
 </html>
