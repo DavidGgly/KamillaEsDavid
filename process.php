@@ -3,7 +3,7 @@
 
 <?php
 
-    $guestname = $_POST['guestname'];
+    $guestName = $_POST['guestnames'];
     $notes = $_POST['notes'];
 
     $host="localhost";
