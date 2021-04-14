@@ -4,11 +4,11 @@
 <head>
     <title>2021.08.07</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    
+
     <script type='text/javascript'>
         function addFields(){
             // Number of inputs to create
-            var number = document.getElementById("guestnumber").value;
+            var number = document.getElementById("howmuchGuests").value;
 
             // Container <div> where dynamic content will be placed
             var container = document.getElementById("container");
@@ -25,6 +25,7 @@
                 container.appendChild(document.createElement("br"));
 
                 var guestname = document.createElement("input");
+                guestname.id = "guestname";
                 guestname.type = "text";
                 guestname.name = "guestnames[]";
                 container.appendChild(guestname);
@@ -35,6 +36,7 @@
                 container.appendChild(document.createElement("br"));
 
 				var notes = document.createElement("textarea");
+                notes.id = "notes";
                 notes.type = "text";
                 notes.name = "notes[]";
                 container.appendChild(notes);
@@ -45,6 +47,7 @@
 
             var registerButton = document.createElement("input");
             registerButton.type = "submit";
+            registerButton.id = "regButt";
             registerButton.name = "registerButton";
             registerButton.value = "Elfogadom a meghívást :)"
             container.appendChild(registerButton);
@@ -52,13 +55,15 @@
         }
     </script>
 </head>
-    <body>
+    <body id="body">
+        <div id="howmuch">
         <form>
             <input type="number" id="howmuchGuests" placeholder="Hány főt szeretnél beírni?">
             <input type="button" id="nextButt" name="next" onclick="addFields()" value="Tovább">
         </form>
         <form method="POST" action="process.php">
-            <div id="container"><br>
+            <div id="container">
         </form>
+        </div>
     </body>
 </html>
