@@ -1,0 +1,26 @@
+body {
+    background-image: url("colorfulBG.jpg");
+    background-blend-mode: darken;
+}
+
+#howmuch {
+    text-align: center;
+}
+
+#howmuchGuests {
+    background-color: wheat;
+    border-radius: 20px;
+    border-style: solid;
+    margin: 20px 20px 20px 20px;
+    padding: 10px 10px 10px 10px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    width: 230px;
+}
+
+#guestname, #notes {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+  }
