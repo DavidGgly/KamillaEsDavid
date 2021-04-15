@@ -46,13 +46,12 @@
                 container.appendChild(document.createElement("br"));
             }
 
-            var registerButton = document.createElement("input");
-            registerButton.type = "submit";
-            registerButton.id = "regButt";
-            registerButton.name = "registerButton";
-            registerButton.value = "Elfogadom a meghívást :)"
-            container.appendChild(registerButton);
-            
+            var regButton = document.createElement("button");
+            regButton.setAttribute("type", "submit");
+            regButton.setAttribute("class", "btn btn-primary");
+            regButton.innerHTML = "Ott leszünk!";
+
+            container.appendChild(regButton);
         }
     </script>
 </head>
