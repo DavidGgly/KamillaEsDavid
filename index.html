@@ -32,10 +32,9 @@
                 guestname.id = "guestname";
                 guestname.type = "text";
                 guestname.name = "guestnames[]";
-                guestname.class = "form-control";
-                guestname.tabIndex = 1;
-                guestname.placeholder = (i+1) + ". vendég neve";
+                guestname.setAttribute("class", "form-control");
                 guestname.required = true;
+                guestname.placeholder = "Teljes név";
                 container.appendChild(guestname);
                 container.appendChild(document.createElement("br"));
 
@@ -48,9 +47,8 @@
                 notes.id = "notes";
                 notes.type = "text";
                 notes.name = "notes[]";
-                notes.class = "form-control";
-                notes.tabIndex = 2;
-                notes.placeholder = "Megjegyzés"
+                notes.setAttribute("class", "form-control");
+                notes.placeholder = "Ételallergia, stb."
                 container.appendChild(notes);
 
                 container.appendChild(document.createElement("br"));
@@ -59,7 +57,7 @@
 
             var regButton = document.createElement("button");
             regButton.setAttribute("type", "submit");
-            regButton.setAttribute("class", "btn btn-primary");
+            regButton.setAttribute("class", "btn btn-primary w-100");
             regButton.innerHTML = "Ott leszünk!";
 
             container.appendChild(regButton);
