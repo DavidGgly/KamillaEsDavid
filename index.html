@@ -71,18 +71,19 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
         
-
-        <section class="container-fluid">
-            <section class="col-12 col-sm-6 col-ms-3">
-                <form method="POST" action="process.php"><br>
-                    <div class="form-group">
-                        <input type="number" class="form-control" id="guestNumber" placeholder="Hány főt szeretnél beírni?" required>
-                        <input type="button" id="nextButt" name="next" onclick="addFields()" value="Tovább">
-                    </div>
-                    <div class="form-group">
-                        <div id="container">
-                    </div>
-                </form>
+        <section class="container-fluid bg">
+            <section class="row justify-content-center">
+                <section class="col-12 col-sm-4 col-ms-3">
+                    <form method="POST" action="process.php" class="form-container"><br>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="guestNumber" placeholder="Hány főt szeretnél beírni?" required>
+                            <button type="button" id="nextButt" name="next" onclick="addFields()" class="btn btn-primary">Tovább</button>
+                        </div>
+                        <div class="form-group">
+                            <div id="container">
+                        </div>
+                    </form>
+                </section>
             </section>
         </section>
 
